@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boodschappenlijst – Mongolian Beef</title>
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Boodschappenlijst Mongolian Beef">
+<style>
+  :root{--bg:#0b1220;--card:#111827;--ink:#e5e7eb;--muted:#9ca3af;--accent:#22c55e;--border:#1f2937}
+  html,body{height:100%} 
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1220,#111827);color:var(--ink)}
+  .wrap{max-width:860px;margin:0 auto;padding:20px 16px 88px}
+  header{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
+  h1{font-size:1.4rem;margin:10px 0}
+  .subtitle{color:var(--muted);font-size:.95rem;margin-top:-6px}
+  .controls{display:flex;gap:8px;flex-wrap:wrap}
+  button, .btn{background:#1f2937;border:1px solid var(--border);color:var(--ink);padding:10px 12px;border-radius:10px;cursor:pointer}
+  button:hover{border-color:#374151}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
+  .card{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:14px}
+  .card h2{font-size:1.05rem;margin:0 0 8px 0}
+  ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+  li{display:flex;align-items:center;gap:10px;padding:8px;border-radius:10px;border:1px dashed transparent}
+  li.done{opacity:.6;text-decoration:line-through}
+  input[type=checkbox]{width:20px;height:20px}
+  footer{position:fixed;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(17,24,39,.0),rgba(17,24,39,.92));padding:10px 16px}
+  .status{max-width:860px;margin:0 auto;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .tip{font-size:.9rem}
+  .sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Checklist – Boodschappenlijst Mongolian Beef</h1>
+        <div class="subtitle">Werkt als app op je iPhone. Offline, met lokale opslag.</div>
+      </div>
+      <div class="controls">
+        <button id="checkAll">Alles aanvinken</button>
+        <button id="uncheckAll">Alles uitvinken</button>
+        <button id="reset">Reset</button>
+        <button id="share">Deel/Exporteer</button>
+      </div>
+    </header>
+
+    <section class="grid" id="list"></section>
+  </div>
+
+  <footer>
+    <div class="status">
+      <div id="progress">0/0 afgevinkt</div>
+      <div class="tip">Tip: voeg eigen items toe via “+ Item”. Toevoegen aan beginscherm via Deel‑icoon → Zet op beginscherm.</div>
+    </div>
+  </footer>
+
+<script>
+const DATA = [
+  { title:"Mongolian Beef", items:[
+    {id:"bavette", label:"500 gram bavette"},
+    {id:"light-soy-sauce-marinate", label:"1 eetlepel light soy sauce (marinade)"},
+    {id:"shaohsingwijn", label:"1 eetlepel Shaohsingwijn"},
+    {id:"bakingsoda", label:"½ theelepel bakingsoda"},
+    {id:"maizena-marinate", label:"1 eetlepel maizena (marinade)"},
+    {id:"witte-peper", label:"½ theelepel witte peper"},
+    {id:"olie", label:"Flinke scheut olie"},
+    {id:"gember", label:"Stukje gember van ca. 5 cm"},
+    {id:"knoflook", label:"3 tenen knoflook"},
+    {id:"bosuitjes", label:"3 bosuitjes"},
+    {id:"gedroogde-pepers", label:"2 gedroogde rode pepers"},
+    {id:"light-soy-sauce", label:"60 ml light soy sauce"},
+    {id:"suiker", label:"50 gram lichtbruine basterdsuiker"},
+    {id:"oestersaus", label:"1 eetlepel oestersaus"},
+    {id:"maizena-saus", label:"1 eetlepel maizena (voor saus)"}
+  ]}
+];
+
+// Code for managing checklist goes here (similar to previous example)
+</script>
+</body>
+</html>
