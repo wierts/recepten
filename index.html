@@ -11,92 +11,68 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Recepten">
 <style>
+  img { width: 100%; border-radius: 14px; height: auto; margin-bottom: 10px; }
   :root{--bg:#0b1220;--card:#111827;--ink:#e5e7eb;--muted:#9ca3af;--accent:#22c55e;--border:#1f2937}
   html,body{height:100%}
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1220,#111827);color:#ffffff;}
   .wrap{max-width:860px;margin:0 auto;padding:20px 16px 88px}
   header{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
-  h1{font-size:1.4rem;margin:10px 0}
-  .subtitle{color:var(--muted);font-size:.95rem;margin-top:-6px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
-  .card{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:14px}
+  h1{font-size:1.4rem;margin:10px 0;text-align:center;}
+  .grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:14px;margin-top:18px}
+  .card{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:14px;display: flex;flex-direction: column;justify-content: space-between;}
   .card h2{font-size:1.05rem;margin:0 0 8px 0; color:var(--ink);}
-  .btn{background:#1f2937;border:1px solid var(--border);color:var(--ink);padding:10px 12px;border-radius:10px;cursor:pointer}
-  .btn:hover{border-color:#374151}
+  .btn{background:#1f2937;border:1px solid var(--border);color:var(--ink);padding:10px 12px;border-radius:10px;cursor:pointer;width:100%;}
+  .btn:hover{border-color:#374151;}
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div>
-        <h1>Recepten Selectie</h1>
+        <h1 style="text-align: center; margin-bottom: 20px;">Recepten Selectie</h1>
         <div class="subtitle">Selecteer een recept om te bekijken.</div>
       </div>
     </header>
     <section class="grid">
       <div class="card">
-        <div class="card">
-        <h2>Nasi Goreng</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Nasi Goreng</h2>
         <a href="nasi_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="nasi_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="nasi_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="nasi_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Sticky Honey Chicken</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Sticky Honey Chicken</h2>
         <a href="stickychicken.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="sticky_chicken_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="stickychicken.html" class="btn">Bekijk Boodschappenlijst</a> <a href="sticky_chicken_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Kip Korma</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Kip Korma</h2>
         <a href="korma_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="korma_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="korma_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="korma_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Indische Saté Ajam</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Indische Saté Ajam</h2>
         <a href="sate_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="sate_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="sate_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="sate_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Kip Tikka Masala</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Kip Tikka Masala</h2>
         <a href="tikka_masala_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="tikka_korma_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="tikka_masala_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="tikka_korma_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Thaise Groene Curry</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Thaise Groene Curry</h2>
         <a href="thaise_groene_curry_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="thaise_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="thaise_groene_curry_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="thaise_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Mongolian Beef</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Mongolian Beef</h2>
         <a href="mongolian_beef_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="mongolian_beef_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
-        <a href="mongolian_beef_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="mongolian_beef_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
       <div class="card">
-        <div class="card">
-        <h2>Indiase Chicken Biriyani</h2>
+        <h2 style="height: 100px; display: flex; align-items: center; justify-content: center;">Indiase Chicken Biriyani</h2>
         <a href="indiase_chicken_biriyani_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="indiase_chicken_biriyani_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
-      </div>
-        <a href="indiase_chicken_biriyani_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a> <a href="indiase_chicken_biriyani_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
     </section>
   </div>
