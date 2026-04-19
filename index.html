@@ -130,6 +130,26 @@
     border-color: var(--accent-hover);
   }
 
+  .card-meta {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 0.78rem;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  .badge.easy { border-color: #22c55e44; color: #22c55e; }
+  .badge.medium { border-color: #f59e0b44; color: #f59e0b; }
+  .badge.hard { border-color: #ef444444; color: #ef4444; }
+
   @media (max-width: 600px) {
     .wrap { padding: 24px 16px 40px; }
     header h1 { font-size: 1.6rem; }
@@ -146,41 +166,73 @@
     <section class="grid">
       <div class="card">
         <h2>Nasi Goreng</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 30 min</span>
+          <span class="badge easy">Makkelijk</span>
+        </div>
         <a href="nasi.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="nasi_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Sticky Honey Chicken</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 45 min</span>
+          <span class="badge medium">Gemiddeld</span>
+        </div>
         <a href="stickychicken.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="sticky_chicken_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Kip Korma</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 1 uur</span>
+          <span class="badge medium">Gemiddeld</span>
+        </div>
         <a href="korma_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="korma.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Indische Saté Ajam</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 1,5 uur</span>
+          <span class="badge medium">Gemiddeld</span>
+        </div>
         <a href="sate_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="sate_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Kip Tikka Masala</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 1,5 uur</span>
+          <span class="badge hard">Uitdagend</span>
+        </div>
         <a href="tikka_masala_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="tikka_korma_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Thaise Groene Curry</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 45 min</span>
+          <span class="badge medium">Gemiddeld</span>
+        </div>
         <a href="thaise_groene_curry_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="thaise_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Mongolian Beef</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 1,5 uur</span>
+          <span class="badge medium">Gemiddeld</span>
+        </div>
         <a href="mongolian_beef_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="mongolian_beef_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>
       <div class="card">
         <h2>Indiase Chicken Biriyani</h2>
+        <div class="card-meta">
+          <span class="badge">⏱ 2 uur</span>
+          <span class="badge hard">Uitdagend</span>
+        </div>
         <a href="indiase_chicken_biriyani_boodschappenlijst.html" class="btn">Bekijk Boodschappenlijst</a>
         <a href="indiase_chicken_biriyani_kookinstructies.html" class="btn">Bekijk Kookinstructies</a>
       </div>

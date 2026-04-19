@@ -32,10 +32,14 @@
   .status{max-width:860px;margin:0 auto;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:10px}
   .tip{font-size:.9rem}
   .sr{position:absolute;left:-9999px}
+  .back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;font-size:.9rem;margin-bottom:12px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:rgba(255,255,255,.03);transition:all .2s ease}
+  .back-btn:hover{color:var(--ink);border-color:#374151;background:rgba(255,255,255,.06)}
 </style>
 </head>
 <body>
+<noscript><div style="padding:20px;color:#e5e7eb;background:#1f2937;margin:16px;border-radius:10px;">JavaScript is uitgeschakeld. Zet JavaScript aan om deze pagina te gebruiken.</div></noscript>
   <div class="wrap">
+    <a href="index.html" class="back-btn">&#8592; Terug naar recepten</a>
     <header>
       <div>
         <h1>Checklist – Boodschappenlijst Kip Tikka Masala</h1>
@@ -91,14 +95,14 @@ const DATA = [
     {id:"korianderblad", label:"verse korianderblad"}
   ]},
   { title:"Rijst", items:[
-    {id:"rijst-basmatirijst", label:"1 kilo basmatirijst"},
-    {id:"rijst-ui", label:"1 flinke ui, gesnipperd"},
-    {id:"rijst-groene-peper", label:"1 groene Spaanse peper, fijngehakt"},
-    {id:"rijst-knoflook", label:"1 teen knoflook, fijngehakt"},
-    {id:"rijst-garam-masala", label:"1 theelepel garam masala"},
-    {id:"rijst-zout", label:"2 theelepels zout"},
-    {id:"rijst-olie", label:"50 ml olie"},
-    {id:"rijst-kippenbouillon", label:"1¼ liter kippenbouillon"}
+    {id:"basmatirijst", label:"1 kilo basmatirijst"},
+    {id:"ui", label:"1 flinke ui, gesnipperd"},
+    {id:"groene-peper", label:"1 groene Spaanse peper, fijngehakt"},
+    {id:"knoflook", label:"1 teen knoflook, fijngehakt"},
+    {id:"garam-masala", label:"1 theelepel garam masala"},
+    {id:"zout", label:"2 theelepels zout"},
+    {id:"olie", label:"50 ml olie"},
+    {id:"kippenbouillon", label:"1¼ liter kippenbouillon"}
   ]}
 ];
 

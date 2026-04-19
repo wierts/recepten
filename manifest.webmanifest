@@ -1,6 +1,6 @@
 {
-  "name": "Sticky Honey Chicken – Checklist",
-  "short_name": "Sticky Checklist",
+  "name": "Recepten – Boodschappen & Kookinstructies",
+  "short_name": "Recepten",
   "start_url": ".",
   "scope": "/",
   "display": "standalone",
